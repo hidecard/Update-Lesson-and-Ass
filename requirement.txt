@@ -1,0 +1,68 @@
+Project Title: Personal Portfolio Website 
+
+Objective:
+    To create a personal portfolio website using HTML and CSS that showcases personal information, skills, projects, and a contact form.
+The website should be responsive and include design concepts learned from Day 3 to Day 6.
+
+Requirements (Day 3 → Day 6 Concepts)
+=====================================
+Day 3 — float, border, list (ul, ol)
+Use float to align your profile image next to text in the About section.
+Use border to decorate sections or project cards.
+Use ul and li for the navigation menu and the skills list.
+
+Day 4 — display (flex, justify, align), a, hover, button
+Use display: flex for layout alignment (Navigation, Projects, Skills).
+Use justify-content and align-items to center or space out content.
+Use a:hover to add hover effects for navigation links.
+Use button:hover to add hover color changes on buttons.
+
+Day 5 — form, input, br, outline
+Create a contact form in the Contact section with:
+Name, Email, and Message fields (<input> and <textarea>)
+
+A Submit Button
+Use outline: none and custom focus styles for input fields.
+Use <br> where appropriate to create spacing between elements.
+
+Day 6 — font (Myanmar), icon, responsive (@media)
+Use a Myanmar font such as “Noto Sans Myanmar”.
+Include Font Awesome icons in the footer (Facebook, Instagram, GitHub).
+Use @media queries to make the website responsive:
+Projects should stack vertically on small screens.
+The About image should center on small devices instead of floating.
+
+Website Structure
+=================
+1. Header
+Contains the site title (e.g., “Arkar Yan’s Portfolio”)
+Navigation Menu: About | Skills | Projects | Contact
+
+2. About Section
+=================
+Profile Picture (with float)
+Introduction text in Myanmar language
+
+3. Skills Section
+=================
+Skills list using <ul> and <li>
+Styled with border or background color
+
+4. Projects Section
+====================
+10 project cards displayed using Flexbox
+
+Each project includes:
+1.Project Title
+2.Short Description
+3.“View More” Button with hover effects
+
+5. Contact Section
+=================
+Form with Name, Email, and Message fields
+Send button styled with hover effect
+
+6. Footer
+=========
+Copyright text
+Font Awesome Icons (Facebook, Instagram, GitHub)

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio - Arkar Yan</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    /* ---------- Basic Setup ---------- */
+    body {
+      font-family: "Noto Sans Myanmar", sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    /* ---------- Navigation ---------- */
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      margin: 10px 0 0 0;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #00bcd4;
+      border-bottom: 2px solid #00bcd4;
+      padding-bottom: 3px;
+    }
+
+    /* ---------- About Section ---------- */
+    .about {
+      padding: 50px;
+      overflow: auto;
+    }
+
+    .about img {
+      float: left;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      margin-right: 30px;
+      border: 3px solid #00bcd4;
+    }
+
+    .about h2 {
+      color: #00bcd4;
+    }
+
+    /* ---------- Skills Section ---------- */
+    .skills {
+      background: #f2f2f2;
+      padding: 50px;
+    }
+
+    .skills h2 {
+      text-align: center;
+      color: #00bcd4;
+    }
+
+    .skills ul {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      list-style: circle;
+    }
+
+    /* ---------- Projects Section ---------- */
+    .projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; /* ထည့်ပါ */
+    gap: 20px; /* spacing လှအောင် */
+    padding: 50px;
+    }
+
+
+    .project-card {
+      width: 250px;
+      border: 2px solid #00bcd4;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .project-card:hover {
+      background-color: #00bcd4;
+      color: white;
+      transform: scale(1.05);
+    }
+
+    .project-card button {
+      margin-top: 10px;
+      padding: 8px 15px;
+      border: none;
+      background: white;
+      color: #00bcd4;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+
+    .project-card button:hover {
+      background: #222;
+      color: white;
+    }
+
+    /* ---------- Contact Section ---------- */
+    .contact {
+      background: #f9f9f9;
+      padding: 50px;
+    }
+
+    .contact h2 {
+      text-align: center;
+      color: #00bcd4;
+    }
+
+    form {
+      max-width: 400px;
+      margin: auto;
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: 2px solid #00bcd4;
+      outline: none;
+      border-radius: 5px;
+    }
+
+    input:focus, textarea:focus {
+      border-color: #007a8c;
+    }
+
+    button {
+      width: 100%;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #007a8c;
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    footer i {
+      margin: 0 10px;
+      color: #00bcd4;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 768px) {
+      .projects {
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .about img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px;
+      }
+
+      .skills ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Arkar Yan’s Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <img src="./profile.png" alt="Profile Picture">
+    <h2>ကျွန်တော်အကြောင်း</h2>
+    <p>
+      မင်္ဂလာပါ။ ကျွန်တော်က Arkar Yan ဖြစ်ပါတယ်။  
+      Web Developer လမ်းကြောင်းပေါ်မှာ စတင်လေ့လာနေပါတယ်။  
+      HTML, CSS, JavaScript နဲ့ Responsive Design တွေကို လေ့လာနေပါတယ်။
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>ကျွန်တော့်အရည်အချင်းများ</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+  </section>
+
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>My first personal portfolio project.With Html , Css </p>
+    <button>View More</button>
+  </div>
+
+  <div class="project-card">
+    <h3>Restaurant Landing Page</h3>
+    <p>Responsive website for a local restaurant.</p>
+    <button>View More</button>
+  </div>
+
+  <div class="project-card">
+    <h3>Online Shop UI</h3>
+    <p>E-commerce homepage design using HTML & CSS.</p>
+    <button>View More</button>
+  </div>
+
+  <div class="project-card">
+    <h3>Travel Blog</h3>
+    <p>Blog layout with floating images and content sections.</p>
+    <button>View More</button>
+  </div>
+
+  <div class="project-card">
+    <h3>Student Management System</h3>
+    <p>Student list, forms, and database integration UI.</p>
+    <button>View More</button>
+  </div>
+
+  <div class="project-card">
+    <h3>Weather App UI</h3>
+    <p>Clean weather dashboard using flexbox.</p>
+    <button>View More</button>
+  </div>
+
+  <div class="project-card">
+    <h3>Hotel Booking Page</h3>
+    <p>Hotel booking page with form and responsive layout.</p>
+    <button>View More</button>
+  </div>
+
+  <div class="project-card">
+    <h3>Music Player UI</h3>
+    <p>Interactive front-end design for a music player.</p>
+    <button>View More</button>
+  </div>
+
+  <div class="project-card">
+    <h3>Social Media Profile</h3>
+    <p>Facebook-like profile card with hover effects.</p>
+    <button>View More</button>
+  </div>
+
+  <div class="project-card">
+    <h3>Contact Form Design</h3>
+    <p>Form with hover button and custom outline styling.</p>
+    <button>View More</button>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>ဆက်သွယ်ရန်</h2>
+    <form>
+      <input type="text" placeholder="အမည်">
+      <input type="email" placeholder="အီးမေးလ်">
+      <textarea rows="4" placeholder="မက်ဆေ့"></textarea>
+      <button type="submit">ပေးပို့မည်</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Arkar Yan | Follow me on  
+      <i class="fa-brands fa-facebook"></i> 
+      <i class="fa-brands fa-instagram"></i> 
+      <i class="fa-brands fa-github"></i>
+    </p>
+  </footer>
+
+</body>
+</html>
