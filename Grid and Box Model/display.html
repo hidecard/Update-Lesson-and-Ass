@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Property Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f5f5f5;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    section {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 20px 0;
+      padding: 15px;
+    }
+
+    .box {
+      background: #4CAF50;
+      color: white;
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+    }
+
+    /* display: block */
+    .block .box {
+      display: block;
+      width: 100px;
+    }
+
+    /* display: inline */
+    .inline .box {
+      display: inline;
+    }
+
+    /* display: inline-block */
+    .inline-block .box {
+      display: inline-block;
+      width: 100px;
+      text-align: center;
+    }
+
+    /* display: flex */
+    .flex {
+      display: flex;
+      gap: 10px;
+    }
+
+    /* display: grid */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    /* display: none */
+    .none .box {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>CSS Display Property Examples</h1>
+
+  <section class="block">
+    <h2>display: block</h2>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </section>
+
+  <section class="inline">
+    <h2>display: inline</h2>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </section>
+
+  <section class="inline-block">
+    <h2>display: inline-block</h2>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </section>
+
+  <section>
+    <h2>display: flex</h2>
+    <div class="flex">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>display: grid</h2>
+    <div class="grid">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+  </section>
+
+  <section class="none">
+    <h2>display: none</h2>
+    <p>The boxes below are hidden (display: none):</p>
+    <div class="box">Box 1</div>
+    <div class="box">Box 2</div>
+    <div class="box">Box 3</div>
+  </section>
+</body>
+</html>
